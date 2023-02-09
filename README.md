@@ -2,7 +2,6 @@
 
 - Loading/Downloading image from URL and save in local using catcher
 
-
  class ImageCatcher {
     private let cache = NSCache<NSString, UIImage>()
     private var observer: NSObjectProtocol?
@@ -30,4 +29,4 @@
     func save(image: UIImage, forKey key: String) {
         cache.setObject(image, forKey: key as NSString)
     }
-}
+ }
